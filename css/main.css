@@ -1,0 +1,268 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #384047;
+}
+
+header {
+  background: #353d4a;
+  margin: 2px;
+}
+
+.banner {
+  border-bottom-style: solid;;
+  border-bottom-width: thick;
+}
+
+#line {
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+  margin-top: 2px;
+}
+
+hr {
+  margin: 4px 0;
+}
+
+form {
+  /*max-width: 480px;*/
+  margin: 0 auto 10px;
+  padding: 10px 8px;
+  background: #ffffff;
+
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 2px;
+}
+
+h2 {
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #b0b0b0;
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 10px auto 20px;
+}
+
+input[placeholder="Required "] {
+  font-style: italic;
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="address"],
+input[type="city"],
+input[type="date"],
+select {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(0,0,0,0);
+  font-size: 14px;
+  height: auto;
+  margin: 0 0 15px 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  border-radius: 5px;
+}
+
+#zip {
+  /*background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 14px;
+  height: auto;
+  margin: 0 0 15px 0;
+  outline: 0;
+  padding: 15px;
+  border: 2px solid rgba(0,0,0,0);*/
+  width: 50%;
+  /*background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  border-radius: 5px;*/
+
+}
+
+textarea {
+  background: rgba(255,255,255,0.1);
+  /*transparent border to fix margin-bottom push on labels when input focsuessed*/
+  border: 2px solid rgba(0,0,0,0);
+  font-size: 14px;
+  height: 100px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  /*box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;*/
+  /*margin-bottom: 30px;*/
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+input:focus[type="text"],
+input:focus[type="email"],
+input:focus[type="tel"],
+input:focus[type="address"],
+input:focus[type="city"],
+input:focus[type="date"] {
+  /*padding: 0;*/
+  margin: 0 0 15px 0;
+  border: 2px solid #687285;
+  height: auto;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  /*padding: 0;*/
+  /*margin: 0 0 30px 0;*/
+  border: 2px solid #687285;
+  height: 100px;
+  border-radius: 5px;
+}
+
+select {
+  padding: 6px;
+  height: 48px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #3aa4a4;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+  padding: 0;
+}
+
+.main-contact {
+  border-bottom-style: solid;
+  border-color: black;
+  padding: 0;
+
+}
+
+legend {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #687285;
+  font-weight: lighter;
+}
+
+label.light {
+  font-weight: lighter;
+  display: inline;
+}
+
+.contact {
+  text-align: left;
+  padding-top: 20px;
+}
+
+footer {
+  font-style: italic;
+  font-weight: lighter;
+  color: #b0b0b0;
+  text-align: center;
+  padding: 20px 0 40px;
+  font-size: 14px;
+  background-color: white;
+}
+
+/*/\/\/\/\/\ Media Queries /\/\/\/\/\/\/\/*/
+
+@media screen and (min-width: 640px) {
+
+  form {
+    max-width: 640px;
+  }
+
+}
+
+@media screen and (min-width: 760px) {
+
+  body {
+  background:
+  linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+  linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #fff 91px, #fff 135px, transparent 135px),
+  linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+  background-color:#fff;
+  background-size: 128px 128px;
+  }
+
+  .clearfix {
+    overflow: auto;
+  }
+
+  .row label {
+   padding-top: 10px;
+ }
+
+  .row {
+    width: 100%;
+  }
+
+  .row label {
+    float: left;
+    width: 25%;
+  }
+
+  .row input {
+    float: left;
+    width: 75%;
+  }
+
+  .row select {
+    float: left;
+    width: 75%;
+  }
+
+}

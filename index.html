@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <header>
+        <h1>THE CODE REVIEW</h1>
+      </header>
+      <form action="index.html" method="post">
+
+        <div class="banner">
+          <h2>Signup for our newsletter</h2>
+          <h3>Get the latest news on how your code is doing right in your inbox</h3>
+        </div>
+        <div id="line"></div>
+
+        <fieldset class="main-contact">
+          <legend class="contact">Contact Information</legend>
+          <!-- orginally had clearfix in each div in this fieldset -->
+          <div class="row">
+            <label for="text">Full Name</label>
+            <input type="text" id="text" name="user_name" placeholder="Required ">
+          </div>
+          <div class="row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" placeholder="Required ">
+          </div>
+          <div class="row">
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel" name="user_tel">
+          </div>
+          <div class="row" >
+            <label for="date">Date of Birth</label>
+            <input type="text" id="date" name="user_birthdate" placeholder="mm/dd/yyyy">
+          </div>
+          <div class="row">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address">
+          </div>
+          <div class="row">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+          </div>
+          <div class="row">
+            <label for="state">State</label>
+            <select id="state" name="user_state">
+                <option value="choose-state">Choose State</option>
+                <option value="california">California</option>
+                <option value="etc">et cetera</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zip">
+          </div>
+
+        </fieldset>
+
+        <fieldset class="section-news">
+          <legend>Newsletter</legend>
+          <p>Select the newsletter you would like to receive</p>
+
+          <input type="checkbox" id="html" value="html_news" name="user_news"><label class="light" for="html">HTML News</label><br>
+          <input type="checkbox" id="css" value="css_news" name="user_news"><label class="light" for="css">CSS News</label><br>
+          <input type="checkbox" id="js" value="js_design" name="user_news"><label class="light" for="js">Javascript News</label><br>
+          <input type="checkbox" id="ruby" value="ruby_design" name="ruby_news"><label class="light" for="ruby">Ruby on Rails News</label><br>
+          <input type="checkbox" id="php" value="php_design" name="php_news"><label class="light" for="php">PHP News</label><br>
+          <input type="checkbox" id="python" value="python_design" name="python_news"><label class="light" for="python">Python News</label><br>
+
+          <p>Newsletter format</p>
+          <input type="radio" id="html-format" value="html-format" name="user_age"><label for="html-format" class="light">HTML</label><br>
+          <input type="radio" id="plain-text" value="plain-text" name="user_age"><label for="plain-text" class="light">Plain Text</label><br>
+
+          <p>Other topics you'd like to hear about</p>
+          <textarea id="comment" name="user_comment"></textarea>
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+
+        <footer>Copyright The Code Review</footer>
+
+      </form>
+    </body>
+</html>
